@@ -18,7 +18,6 @@ public class Hotel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
 
     @Column(nullable = false)
@@ -44,6 +43,6 @@ public class Hotel {
     @Column(nullable = false)
     private Boolean active;
 
-    @OneToMany(mappedBy = "hotels",fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "hotel",fetch = FetchType.LAZY)
     private List<Room> rooms;
 }
