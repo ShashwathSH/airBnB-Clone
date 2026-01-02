@@ -5,7 +5,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-
+//Room Data Transfer Object
 @Data
 public class RoomDto {
 
