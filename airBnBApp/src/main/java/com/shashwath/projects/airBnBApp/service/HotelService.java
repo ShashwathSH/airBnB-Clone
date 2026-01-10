@@ -1,6 +1,8 @@
 package com.shashwath.projects.airBnBApp.service;
 
 import com.shashwath.projects.airBnBApp.dto.HotelDto;
+import com.shashwath.projects.airBnBApp.dto.HotelInfoDto;
+import org.jspecify.annotations.Nullable;
 
 public interface HotelService {
     HotelDto createNewHotel(HotelDto hotelDto);
@@ -11,4 +13,6 @@ public interface HotelService {
 
     void deleteHotelById(Long id);
     void activateHotel(Long hotelId);
+
+    HotelInfoDto getHotelInfoById(Long hotelId);
 }
